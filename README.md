@@ -44,14 +44,13 @@ This guide will help you set up and run this script. If you encounter any issues
 
 7. With the virtual environment activated, run the script:
    ```bash
-   python convert2pdf.py
+   python splitpdf.py
    ```
 
 ## Troubleshooting
 
 - If you see "python not found", make sure Python is added to your system's PATH
 - If pip install fails, try upgrading pip first: `python -m pip install --upgrade pip`
-- On Windows, if you can't activate the virtual environment, you may need to run: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - If you get a "ModuleNotFoundError", make sure your virtual environment is activated and requirements are installed
 
 ## Deactivating the Virtual Environment

@@ -102,8 +102,7 @@ if __name__ == "__main__":
     if not os.path.exists(input_pdf):
         print("Input pdf file does not exist. Put it in the same folder as this script and give only the name of the pdf.")
         exit()
-    if os.path.exists(output_pdf):
-        print("Output pdf file already exists. Please give a different name.")
-        exit()
+    while os.path.exists(output_pdf):
+        output_pdf = output_pdf[:-4] + "_new.pdf"
     
     split_and_reorder_pdf(input_pdf, output_pdf)
